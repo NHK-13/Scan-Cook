@@ -1,0 +1,40 @@
+.padding {
+    padding: 5%!important;
+    margin-top: 125px!important;
+  }
+  .logo ion-icon{
+    font-size: 8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logo img{
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logo {
+    position: relative;
+    height: 200px;
+  }
+  .logo2 {
+    position: relative;
+  }
+  
+
+
+ion-content 
+{
+  // --ion-background-color: linear-gradient(#6DD5FA, #2980B9);
+  --ion-background-color: #fff;
+  // --ion-background-color: linear-gradient(#485563, #29323c);   
+}
+
+h4
+{
+    margin-bottom: 50px;
+    color: #3c6b7c;
+}

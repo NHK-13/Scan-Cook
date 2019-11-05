@@ -1,0 +1,7 @@
+{
+  "name": "scanandcook",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

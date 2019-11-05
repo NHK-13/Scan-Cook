@@ -1,0 +1,85 @@
+ion-content 
+{
+    // --ion-background-color: linear-gradient(#6DD5FA, #2980B9);
+    --ion-background-color: #ffffff;
+    // --ion-background-color: linear-gradient(#485563, #29323c);
+}
+
+ion-item 
+{
+    --ion-background-color: transparent!important;
+}
+#carte 
+{
+    background-color:  #eef2f3;
+}
+
+.card-background-page 
+{
+    ion-card 
+    {
+        position: relative;
+        text-align: center;
+    }
+    .card-title
+    {
+        position: absolute;
+        bottom: -30px;
+        margin-left: -90px;
+        font-size: 30px;
+        width: 100%;
+        color: #fff;
+        padding-bottom: 30px;
+        margin-bottom: 10px;  
+    }
+    .card-subtitle
+    {
+        font-size: 1.0em;
+        position : absolute;
+        color: #fff;
+    }
+}
+
+ion-toolbar
+{
+    --background: #10dc60;
+    --color: #fff;
+}
+
+ion-menu-button
+{
+    --color: #fff;
+}
+.item{
+    list-style: none;
+    text-align: left;
+}
+ion-card-title{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  
+}
+ion-button{
+    margin-bottom: 20px;
+}
+
+.search-drop-down {
+    position: absolute;
+    width: 50%;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 10;
+    background-color: #F6F6F6;
+    font-family: sans-serif;
+    opacity: 0.98;
+}
+
+.search-results {
+    padding: 10px;
+}
+
+.search-results:hover {
+    background: #707070;
+}

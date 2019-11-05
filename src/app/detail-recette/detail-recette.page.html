@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{recette.titreRecette}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="{{recette.photo}}" style="width: 100%; height: 30%;" alt="">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <i class="far fa-clock"></i>
+        <p>Temps de cuisson </p>
+        {{recette.timeCuisson}}
+      </ion-col>
+      <ion-col>
+        <i class="far fa-clock"></i>
+        <p>Temps de preparation</p> 
+          15 à 30 minutes
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h1 text-center>Ingrédients</h1>
+
+  <ul>
+    <li *ngFor= "let ingredient of recette.ingredientsRecette">
+      {{ingredient}}
+    </li>
+  </ul>
+
+  <h1 text-center>Instructions</h1>
+
+   <ul>
+        <li *ngFor= "let instruction of recette.intructionRecette">
+            {{instruction}}
+            <br>
+            <br>
+        </li>
+  </ul>
+  
+
+
+</ion-content>

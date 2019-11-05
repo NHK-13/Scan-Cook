@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Nos Recettes
+            {{ textSearch }}</ion-title>
+    </ion-toolbar>
+    <ion-searchbar type="text" id="recherche" debounce="500" [(ngModel)]="textSearch" autocomplete="on"></ion-searchbar>
+    <ion-list *ngIf="textSearch !== ''">
+        <ion-item *ngFor="let item of recettes | filterSearch:{ titreRecette: textSearch, ingredientsRecette: textSearch }:false">
+            <a [routerLink]="[ '/detail-recette', item.id]" style="text-decoration: none; ">{{ item.titreRecette }}</a>
+        </ion-item>
+    </ion-list>
+</ion-header>
+
+<ion-content class="card-background-page">
+    <ion-card id="carte" *ngFor="let item of recettes | filterSearch:{ titreRecette: textSearch, ingredientsRecette: textSearch }:false">
+        <!--TODO Ajouter ngIf pour les recettes-->
+        <img src="{{ item.photo }}" alt="">
+        <ion-card-title>
+            {{ item.titreRecette }}
+            <ion-card-subtitle></ion-card-subtitle>
+        </ion-card-title>
+
+        <ion-button color="success" shape="rounded" [routerLink]="[ '/detail-recette', item.id]">
+            Voir la recette</ion-button>
+    </ion-card>
+
+</ion-content>
